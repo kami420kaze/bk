@@ -4,9 +4,9 @@ while True:
 	if name == 'q':
 		break
 	price = input('多少錢捏: ')
-	p = [name, price, '元']
+	p = [name, price]
 	products.append(p)
-
-print(products)
+for p in products:
+	print(p[0], '的價格是', p[1], '元')
 
 # products[0][0] 第一大框裡的第一小框
